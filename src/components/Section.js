@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { Fade } from "react-reveal";
+import { Fade } from "react-awesome-reveal";
 const Section = ({
   title,
   description,
@@ -10,14 +10,14 @@ const Section = ({
 }) => {
   return (
     <Wrap bg={backgroundimg}>
-      <Fade bottom>
+      <Fade direction="up">
         <ItemText>
           <h1>{title}</h1>
           <p>{description}</p>
         </ItemText>
       </Fade>
       <Buttons>
-        <Fade bottom>
+        <Fade direction="up">
           <ButtonGroup>
             <LeftButton>{leftBtnText}</LeftButton>
             {rightBtnText && <RightButton>{rightBtnText}</RightButton>}
